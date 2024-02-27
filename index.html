@@ -5,25 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="./img/Althai-logo.svg">
+    <link rel="apple-touch-icon" href="./assets/img/althai-logo.svg">
+    <link rel="shortcut icon" href="./assets/img/althai-logo.svg" type="image/x-icon">
     <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"> -->
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
 
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
 </head>
 
 <body>
+
+    <div class="spinner-wrapper" id="loading">
+        <div class="spinner"></div>
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
-                <img src="./img/althai-banner-curve.svg" alt="" srcset="">
+                <img src="./assets/img/althai-banner-curve.svg" alt="" srcset="">
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -46,7 +63,7 @@
                             <a class="nav-link" href="#PRODUCTS">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="#CONTACT">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -58,18 +75,18 @@
 
 
     <!-- Start Banner Hero -->
-    <div id="template-mo-AlthaiFoods-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="althai-AlthaiFoods-hero-carousel" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-bs-target="#template-mo-AlthaiFoods-hero-carousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#template-mo-AlthaiFoods-hero-carousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#template-mo-AlthaiFoods-hero-carousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#althai-AlthaiFoods-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#althai-AlthaiFoods-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#althai-AlthaiFoods-hero-carousel" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./img/AL THAI PRODUCT-4.jpg" alt="">
+                            <img class="img-fluid" src="./assets/img/AL THAI PRODUCT-4.jpg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -94,14 +111,15 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./img/AL THAI PRODUCT-2.jpg" alt="">
+                            <img class="img-fluid" src="./assets/img/AL THAI PRODUCT-2.jpg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1"> <b>Al Thai</b> Chakki Atta</h1>
                                 <h3 class="h2">Your Choice for Nutritious Flour</h3>
                                 <p>
-                                    Althai Chakki Atta is your premium choice for <strong>nutritious flour</strong>, milled to perfection
+                                    Althai Chakki Atta is your premium choice for <strong>nutritious flour</strong>,
+                                    milled to perfection
                                     from the finest grains.
                                     With a commitment to quality, our chakki atta is produced to deliver deep flavor and
                                     superior nutrition.
@@ -120,18 +138,22 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./img/AL THAI PRODUCT-5.jpg" alt="">
+                            <img class="img-fluid" src="./assets/img/AL THAI PRODUCT-5.jpg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1">Gram Flour (Besan)</h1>
                                 <h3 class="h2">A Versatile Ingredient for Culinary Delights </h3>
                                 <p>
-                                    Gram Flour, commonly known as Besan, is a staple ingredient in many cuisines around the world.
-                                    Our Gram Flour is renowned for its exceptional quality and purity. Sourced from the finest chickpeas,
+                                    Gram Flour, commonly known as Besan, is a staple ingredient in many cuisines around
+                                    the world.
+                                    Our Gram Flour is renowned for its exceptional quality and purity. Sourced from the
+                                    finest chickpeas,
                                     it is milled to perfection to ensure a fine texture and rich flavor.
-                                    Available in various packaging options, our Gram Flour is perfect for both home and professional kitchens.
-                                    Whether you're making savory snacks, mouth-watering sweets, or hearty dishes, our Gram Flour guarantees
+                                    Available in various packaging options, our Gram Flour is perfect for both home and
+                                    professional kitchens.
+                                    Whether you're making savory snacks, mouth-watering sweets, or hearty dishes, our
+                                    Gram Flour guarantees
                                     outstanding results every time. Experience the excellence of our Gram Flour today!
                                 </p>
                             </div>
@@ -140,11 +162,11 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-AlthaiFoods-hero-carousel"
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#althai-AlthaiFoods-hero-carousel"
             role="button" data-bs-slide="prev">
             <i class="fas fa-chevron-left"></i>
         </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-AlthaiFoods-hero-carousel"
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#althai-AlthaiFoods-hero-carousel"
             role="button" data-bs-slide="next">
             <i class="fas fa-chevron-right"></i>
         </a>
@@ -152,30 +174,38 @@
     <!-- End Banner Hero -->
 
     <!-- ***** Explore Area Starts ***** -->
-    <a href="" id="about"></a>
+    <a href="" id="ABOUT"></a>
     <section class="section" id="explore">
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="left-content">
-                        <h2>Explore Our Products</h2>
-                        <span>You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or
-                            edit this layout. You can convert this template as any kind of ecommerce CMS theme as you
-                            wish.</span>
+                        <h2>Unveiling Our Journey</h2>
+                        <span>Al Thai Foodsstuff Trading LLC is a leading company based in the United Arab Emirates
+                            (UAE), specializing in flour milling and food processing. Our expertise lies in the
+                            production of high-quality food products, catering to the diverse needs of our
+                            customers.</span>
                         <div class="quote">
                             <i class="fa fa-quote-left"></i>
-                            <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+                            <p>At Al Thai Foodsstuff Trading LLC, we are committed to delivering excellence in every
+                                aspect of our business. From sourcing the finest ingredients to employing
+                                state-of-the-art processing techniques, we ensure that our products meet the highest
+                                standards of quality and taste..</p>
                         </div>
-                        <p>There are 5 pages included in this HexaShop Template and we are providing it to you for
-                            absolutely free of charge at our AlthaiFoods website. There are web development costs for
-                            us.
+                        <p>Our journey began with a vision to revolutionize the food industry by offering innovative
+                            solutions and unparalleled customer service. With years of experience and a dedicated team,
+                            we have established ourselves as a trusted name in the market.
                         </p>
-                        <p>If this template is beneficial for your website or business, please kindly <a rel="nofollow"
-                                href="https://paypal.me/AlthaiFoods" target="_blank">support us</a> a little via PayPal.
-                            Please also tell your friends about our great website. Thank you.</p>
+                        <p>At Al Thai Foodsstuff Trading LLC, we take pride in our wide range of services, which include
+                            flour milling, food processing, and distribution. We leverage our extensive knowledge and
+                            resources to deliver customized solutions that meet the unique requirements of our clients.
+                            For support, please visit our <a href="" onclick="error_call_submitation_failed()">Support
+                                Page</a>. To contact us, please
+                            <a href="#CONTACT">reach out</a>..
+                        </p>
                         <div class="main-border-button">
-                            <a href="products.html">Discover More</a>
+                            <a href="" onclick="error_call_submitation_failed()">Discover More</a>
                         </div>
                     </div>
                 </div>
@@ -184,24 +214,24 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="leather">
-                                    <h4>Leather Bags</h4>
-                                    <span>Latest Collection</span>
+                                    <h4>Food Products</h4>
+                                    <span>Wide Variety Available</span>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="first-image">
-                                    <img src="./images/explore-image-01.jpg" alt="">
+                                    <img src="./assets/img/althai-logo.svg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="second-image">
-                                    <img src="./images/explore-image-02.jpg" alt="">
+                                    <img src="./assets/img/AL THAI PRODUCT-4.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="types">
-                                    <h4>Different Types</h4>
-                                    <span>Over 304 Products</span>
+                                    <h4>Quality Services</h4>
+                                    <span>Customer Satisfaction Guaranteed</span>
                                 </div>
                             </div>
                         </div>
@@ -213,67 +243,172 @@
     <!-- ***** Explore Area Ends ***** -->
 
     <!-- Start Categories of The Month -->
-    <section class="container py-5 products">
+    <section class="container py-5 products pro-cats">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
                 <h1 class="h1">Categories of The Month</h1>
                 <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Explore our featured categories to discover the finest flour mill products and foodstuff offerings.
                 </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./img/category_img_01.jpg"
-                        class="rounded-circle img-fluid border product-card">
-
-                </a>
-                <h5 class="text-center mt-3 mb-3">Watches</h5>
-
-
+            <div class="col-12 col-md-4 p-5 mt-3 ">
+                <a href="#"><img src="./assets/img/althai-sol.jpeg"
+                        class="rounded-circle img-fluid border product-card"></a>
+                <h5 class="text-center mt-3 mb-3">Flour Milling Machinery</h5>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./img/category_img_02.jpg"
+                <a href="#"><img src="./assets/img/althai-sol-2.jpeg"
                         class="rounded-circle img-fluid border product-card"></a>
-                <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
-
+                <h5 class="text-center mt-3 mb-3">Grain Processing Equipment</h5>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./img/category_img_03.jpg"
+                <a href="#"><img src="./assets/img/althai-sol-3.jpeg"
                         class="rounded-circle img-fluid border product-card"></a>
-                <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-
+                <h5 class="text-center mt-3 mb-3">Packaging Solutions</h5>
             </div>
         </div>
+
     </section>
+
     <!-- End Categories of The Month -->
+
+    <!-- products  -->
+
+    <div class="col-lg-6 m-auto" id="PRODUCTS">
+        <h2 class="h2">PRODUCTS</h2>
+        <p>
+            Explore our featured categories to discover the finest flour mill products and foodstuff offerings.
+        </p>
+    </div>
+    <section class="main product-grid product-section">
+        <article class="product-card-sws">
+            <div class="card__img">
+                <img src="./assets/img/AL THAI PRODUCT-3.jpg" alt="">
+            </div>
+            <div class="card__name">
+                <p>CHAKKI FRESH ATTA</p>
+            </div>
+            <div class="card__precis">
+                <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+
+                <div>
+                    <span class="card__preci card__preci--now">CHAKKI FRESH ATTA </span>
+                    <span class="card__preci card__preci--before">50Kg BAG</span>
+                    <!-- <span class="card__preci card__preci--now">$749.00</span> -->
+                </div>
+                <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+        </article>
+
+        <article class="product-card-sws">
+            <div class="card__img">
+                <img src="./assets/img/AL THAI PRODUCT-1.jpg" alt="">
+            </div>
+            <div class="card__name">
+                <p>CHAKKI FRESH&nbsp; ATTA</p>
+            </div>
+            <div class="card__precis">
+                <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+
+                <div>
+                    <span class="card__preci card__preci--now">CKAKKI FRESH ATTA</span>
+                    <span class="card__preci card__preci--before">25 Kg BAG</span>
+                    <!-- <span class="card__preci card__preci--now">22.00د.إ</span> -->
+                </div>
+                <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+        </article>
+
+        <article class="product-card-sws">
+            <div class="card__img">
+                <img src="./assets/img/AL THAI PRODUCT-2.jpg" alt="">
+            </div>
+            <div class="card__name">
+                <p>CHAKKI FRESH ATTA</p>
+            </div>
+            <div class="card__precis">
+                <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                <div>
+                    <span class="card__preci card__preci--now">CKAKKI FRESH ATTA</span>
+                    <span class="card__preci card__preci--before">10Kg BAG</span>
+                    <!-- <span class="card__preci card__preci--now">$749.00</span> -->
+                </div>
+                <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+        </article>
+
+
+
+        <article class="product-card-sws">
+            <div class="card__img">
+                <img src="./assets/img/AL THAI PRODUCT-4.jpg" alt="">
+            </div>
+            <div class="card__name">
+                <p>RICE POWDER</p>
+            </div>
+            <div class="card__precis">
+                <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+
+                <div>
+                    <span class="card__preci card__preci--now">RICE POWDER</span>
+                    <span class="card__preci card__preci--before">15Kg</span>
+                    <!-- <span class="card__preci card__preci--now">$749.00</span> -->
+                </div>
+                <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+        </article>
+
+        <article class="product-card-sws">
+            <div class="card__img">
+                <img src="./assets/img/AL THAI PRODUCT-5.jpg" alt="">
+            </div>
+            <div class="card__name">
+                <p>AIR ZOOM PEGASUS</p>
+            </div>
+            <div class="card__precis">
+                <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+
+                <div>
+                    <span class="card__preci card__preci--now">GRAM FLOUR (BESAN)</span>
+                    <span class="card__preci card__preci--before">15Kg</span>
+
+                    <!-- <span class="card__preci card__preci--now">$749.00</span> -->
+                </div>
+                <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+        </article>
+
+
+    </section>
+
 
 
     <!-- contact section start  -->
-    <section class="contact-section">
+    <section class="contact-section" id="CONTACT">
         <section class="contact-block">
             <div class="contact-section-header">
                 <div class="contact-container">
                     <h2>Contact Us</h2>
-                    <p>Contact Althaifoods for inquiries or requests regarding our premium flour mill products in the
-                        UAE. Fill out the form below, and our team will promptly assist you. Thank you for choosing
-                        Althaifoods</p>
+                    <p>Contact <b>Al Thai Foodsstuff Trading LLC</b> for inquiries or requests regarding our premium
+                        flour mill
+                        products in the <b>UAE</b>. Fill out the form below, and our team will promptly assist you.
+                        Thank you
+                        for choosing Al Thai Foodsstuff Trading LLC.</p>
                 </div>
             </div>
 
             <div class="contact-container">
                 <div class="row">
-
                     <div class="contact-info">
                         <div class="contact-info-item">
                             <div class="contact-info-icon">
                                 <i class="fas fa-home"></i>
                             </div>
-
                             <div class="contact-info-content">
                                 <h4>Address</h4>
-                                <p>4671 Sugar Camp Road,<br /> Owatonna, Minnesota, <br />55060</p>
+                                <p>Al Jurf - industrial Area - 2 - Ajman - United Arab Emirates</p>
                             </div>
                         </div>
 
@@ -281,10 +416,9 @@
                             <div class="contact-info-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
-
                             <div class="contact-info-content">
                                 <h4>Phone</h4>
-                                <p>571-457-2321</p>
+                                <p>+971 65673141</p>
                             </div>
                         </div>
 
@@ -292,10 +426,9 @@
                             <div class="contact-info-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
-
                             <div class="contact-info-content">
                                 <h4>Email</h4>
-                                <p>ntamerrwael@mfano.ga</p>
+                                <p>althai.uae@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -304,52 +437,53 @@
                         <form action="" id="contact-form">
                             <h2>Send Message</h2>
                             <div class="input-box">
-                                <input type="text" required="true" name="">
+                                <input type="text" required="true" name="full_name">
                                 <span>Full Name</span>
                             </div>
 
                             <div class="input-box">
-                                <input type="email" required="true" name="">
+                                <input type="email" required="true" name="email">
                                 <span>Email</span>
                             </div>
 
                             <div class="input-box">
-                                <textarea required="true" name=""></textarea>
+                                <textarea required="true" name="message"></textarea>
                                 <span>Type your Message...</span>
                             </div>
 
                             <div class="input-box">
-                                <input type="submit" value="Send" name="">
+                                <input type="submit" value="Send" name="submit"
+                                    onclick="error_call_submitation_failed()">
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>
-
     </section>
+
     <!-- contact section end  -->
 
     <!-- footer start  -->
-    <footer class="bg-dark" id="tempaltemo_footer">
+    <footer class="bg-dark" id="althaifoods-os_footer">
         <div class="container">
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">AlthaiFoods Shop</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">AlthaiFoods Flour Mill Trading LLC
+                    </h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            123 Consectetur at ligula 10660
+                            123 Flour Mill Street, Dubai, UAE
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                            <a class="text-decoration-none" href="tel:+971 65673141">+971 65673141</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                            <a class="text-decoration-none" href="mailto:althai.uae@gmail.com">althai.uae@gmail.com</a>
                         </li>
                     </ul>
                 </div>
@@ -357,24 +491,19 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#PRODUCTS">Flour Mill Machinery</a></li>
+                        <li><a class="text-decoration-none" href="#PRODUCTS">Grain Processing Equipment</a></li>
+                        <li><a class="text-decoration-none" href="#PRODUCTS">Quality Flour Products</a></li>
+                        <li><a class="text-decoration-none" href="#PRODUCTS">Foodstuff Ingredients</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Explore</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                        <li><a class="text-decoration-none" href="#ABOUT">About Us</a></li>
+                        <li><a class="text-decoration-none" href="#CONTACT">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -386,21 +515,23 @@
                 </div>
                 <div class="col-auto me-auto">
                     <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
+                        <!-- <li class="list-inline-item border border-light rounded-circle text-center">
                             <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
                                     class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
+                        </li> -->
                         <li class="list-inline-item border border-light rounded-circle text-center">
                             <a class="text-light text-decoration-none" target="_blank"
-                                href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                                href="https://www.instagram.com/althai.uae/"><i
+                                    class="fab fa-instagram fa-lg fa-fw"></i></a>
                         </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
+                        <!-- <li class="list-inline-item border border-light rounded-circle text-center">
                             <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
                                     class="fab fa-twitter fa-lg fa-fw"></i></a>
-                        </li>
+                        </li> -->
                         <li class="list-inline-item border border-light rounded-circle text-center">
                             <a class="text-light text-decoration-none" target="_blank"
-                                href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                                href="https://www.linkedin.com/in/al-thai-food-stuff-trading-l-l-c-47856021a/"><i
+                                    class="fab fa-linkedin fa-lg fa-fw"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -409,7 +540,9 @@
                     <div class="input-group mb-2">
                         <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
                             placeholder="Email address">
-                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                        <button class="btn-success" onclick="error_call_submitation_failed()">
+                            <div class="input-group-text btn-success text-light">Subscribe</div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -420,9 +553,9 @@
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; 2021 Company Name
-                            | Designed by <a rel="sponsored" href="https://AlthaiFoods.com"
-                                target="_blank">AlthaiFoods</a>
+                            Copyright &copy; 2024-2025 <a href="https://althaifoods.com">AlthaiFoods Flour Mill Trading
+                                LLC</a>
+                            | Designed by <a rel="sponsored" href="https://braitenx.com" target="_blank">Braitnex</a>
                         </p>
                     </div>
                 </div>
@@ -430,15 +563,15 @@
         </div>
 
     </footer>
+
     <!-- footer End  -->
 
 
     <!-- Start Script -->
-    <script src="./js/jquery-1.11.0.min.js"></script>
-    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/AlthaiFoods.js"></script>
-    <script src=".//js/custom.js"></script>
+    <script src="./assets/js/jquery-1.11.0.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
     <!-- End Script -->
 </body>
 
