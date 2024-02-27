@@ -553,6 +553,12 @@ gallery
   overflow: hidden;
   object-fit: cover;
   background: linear-gradient( orange ,rgb(245, 73, 26));
+ 
+}
+
+.gallery-csx .container{
+  display: flex;
+  flex-direction: column;
 }
 
 .gallery-csx img{
@@ -560,6 +566,13 @@ gallery
   padding: 2vh;
   border-radius: 50px;
   margin: 2px;
+}
+
+.gallery-csx iframe{
+  border-radius: 10px;
+  margin: 10px;
+  width: 50vh;
+  height: 50vh;
 }
 
 @media (min-width: 576px) {
