@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form data
+            var formData = new FormData(this);
+            var name = formData.get('name');
+            var email = formData.get('email');
+            var message = formData.get('message');
+
+            // Construct WhatsApp message with form data
+            var whatsappMessage = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+
+            // Replace "YOUR_PHONE_NUMBER" with your actual WhatsApp number
+            var phoneNumber = "YOUR_PHONE_NUMBER";
+
+            // Construct the WhatsApp URL
+            var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + whatsappMessage;
+
+            // Open WhatsApp in a new tab with the pre-filled message
+            window.open(whatsappUrl, "_blank");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <!-- icons  -->
+    <script src="https://kit.fontawesome.com/3f83c54f58.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="details-nav">
+            <div class="d-nav_contact d-nav_content ">
+                <span class="text">+971 65673141</span>
+            </div>
+            <div class="d-nav_email d-nav_content">
+                <span class="text">althai.uae@gmail.com</span>
+            </div>
+            <div class="d-nav_hour d-nav_content">
+                <p class=""><span>Open hours:</span> <span>Monday - saturday</span>
+                    <span>8:00AM - 7:00PM</span>
+                </p>
+            </div>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#" target="_parent"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="/">Home|الرئيسية</a></li>
+            <li> <a href="/our-story">About|حول</a></li>
+            <li><a href="/contact">Contact|اتصال</a></li>
+
+            <div class="footer-like-navbar">
+
+                <div class="footer-like-navbar-contact">
+                    <h2>Conatct</h2>
+                    <p>+971 65673141</p>
+                </div>
+                <div class="footer-like-navbar-social-links">
+
+                    <a href="https://www.instagram.com/althai.uae/" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="https://www.linkedin.com/in/al-thai-food-stuff-trading-l-l-c-47856021a/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+
+                </div>
+            </div>
+        </ul>
+        <ul class="main-nav">
+            <li class="logo"><a href=""><img src="./assets/images/logo/althai-banner-curve-white-sq.png" alt=""></a>
+            </li>
+            <li class="hideOnMobile"><a href="/">Home|الرئيسية</a></li>
+            <li class="hideOnMobile"><a href="/our-story">About|حول</a></li>
+            <li class="hideOnMobile"> <a href="/contact">Contact|اتصال</a></li>
+
+
+            <li class="menu-button" onclick="showSidebar()"><a href="#" target="_parent"><i
+                        class="fa-solid fa-bars"></i></a></li>
+        </ul>
+
+
+    </nav>
+    <div class="container">
+        <div class="rout-page">
+            <div class="bg-img"></div>
+            <div class="rout">
+                <h2>Explore Our Range of Fine Dry Goods. Ready to See What We Offer?</h2>
+                <p><a href="/">Welcome</a> <i class="fa-solid fa-angle-right"></i> View Our Dry Products <i
+                        class="fa-solid fa-angle-right"></i></p>
+            </div>
+        </div>
+        <div class="products-cat">
+            <button id="btnSpices" onclick="filterProducts('Spices')">Spices</button>
+            <button id="btnPulses" onclick="filterProducts('Pulses')">Pulses</button>
+            <button id="btnRices" onclick="filterProducts('Rices')">Rices</button>
+            <button id="btnFlour" onclick="filterProducts('Flour')">Flour</button>
+            <button id="btnDairy" onclick="filterProducts('Dairy')">Dairy</button>
+            <button id="btnNutdryfruits" onclick="filterProducts('Nutdryfruits')">NUT & Dry Fruits</button>
+        </div>
+
+        <div class="menu-products">
+            <div class="product-menu spices">
+                <div class="list">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/spices-black-pepper.jpeg" alt="Black Pepper">
+                        </div>
+                        <div class="details">
+                            <h3>Black Pepper</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Black pepper is a flowering vine in the family Piperaceae, cultivated for its fruit,
+                                which is usually dried and used as a spice and seasoning.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/spices-coriander.jpeg" alt="Coriander">
+                        </div>
+                        <div class="details">
+                            <h3>Coriander</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Coriander is an herb widely used in cooking due to its distinct flavor and aroma.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/spices-cumin.jpeg" alt="Cumin">
+                        </div>
+                        <div class="details">
+                            <h3>Cumin</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Cumin is a spice made from the dried seeds of a plant known as Cuminum cyminum, which is
+                                a member of the parsley family.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/spices-r-chilly.jpeg" alt="Red Chili">
+                        </div>
+                        <div class="details">
+                            <h3>Red Chili</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Red chili peppers are widely used in many cuisines as a spice to add heat to dishes.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/spices-turmeric.jpeg" alt="Turmeric">
+                        </div>
+                        <div class="details">
+                            <h3>Turmeric</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Turmeric is a bright yellow spice commonly used in Indian cuisine, known for its earthy
+                                flavor and medicinal properties.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/spices-white-pepper.jpeg" alt="White Pepper">
+                        </div>
+                        <div class="details">
+                            <h3>White Pepper</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                White pepper is made from the dried seed of the pepper plant, with the outer fruit layer
+                                removed, resulting in a milder flavor than black pepper.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/spices-gramflour.jpg" alt="Gram Flour (Besan)">
+                        </div>
+                        <div class="details">
+                            <h3>Gram Flour (Besan)</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Gram flour, also known as besan, is a pulse flour made from ground chickpeas, commonly
+                                used in Indian, Pakistani, and Bangladeshi cuisines.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- pulses /////////////////////////////////////////////////////////////////////////////////////////// -->
+            <div class="product-menu pulses">
+                <div class="list">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/pulses-beans.jpeg" alt="Beans">
+                        </div>
+                        <div class="details">
+                            <h3>Beans</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Beans are a type of legume that are commonly used in various cuisines worldwide.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/pulses-pea.jpeg" alt="Pea">
+                        </div>
+                        <div class="details">
+                            <h3>Pea</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Peas are a small spherical seed or the seed-pod of various food crops, widely grown for
+                                human or animal food.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/pulses-dal.jpeg" alt="Dal">
+                        </div>
+                        <div class="details">
+                            <h3>Dal</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Dal is a term used in the Indian subcontinent for dried, split pulses (legumes), such as
+                                lentils, peas, and beans.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/pulses-kalachana.jpeg" alt="Kalachana">
+                        </div>
+                        <div class="details">
+                            <h3>Kalachana</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Kalachana, also known as black chickpeas, are a variety of chickpeas with a slightly
+                                smaller size and darker color than regular chickpeas.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/pulses-lentils.jpeg" alt="Lentils">
+                        </div>
+                        <div class="details">
+                            <h3>Lentils</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Lentils are edible pulses or seeds that belong to the legume family, often used in
+                                various cuisines for their high protein content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/pulses-urad.jpeg" alt="Urad Whole">
+                        </div>
+                        <div class="details">
+                            <h3>Urad Whole</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Urad whole, also known as black gram or black lentil, is a type of legume commonly used
+                                in South Asian cuisine.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/pulses-popcorn.jpeg" alt="Popcorn">
+                        </div>
+                        <div class="details">
+                            <h3>Popcorn</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Popcorn is a type of corn kernel that expands and puffs up when heated, commonly enjoyed
+                                as a snack food.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- rices ///////////////////////////////////////////////////////////////////////////////////////// -->
+            <div class="product-menu rices">
+                <div class="list">
+
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/rices-basmathi.jpeg" alt="Basmati Rice">
+                        </div>
+                        <div class="details">
+                            <h3>Basmati Rice</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Basmati rice is a long-grain rice known for its fragrance and delicate flavor.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/rices-jasmin.jpeg" alt="Jasmine Rice">
+                        </div>
+                        <div class="details">
+                            <h3>Jasmine Rice</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Jasmine rice is a type of long-grain rice known for its fragrant aroma and slightly
+                                sticky texture when cooked.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/rices-redrice.jpeg" alt="Matta Rice">
+                        </div>
+                        <div class="details">
+                            <h3>Red Rice</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Red rice, known for its distinct red color and nutty flavor, is a variety of rice that
+                                is popular in various cuisines around the world.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/rices-arborio.jpeg" alt="Arborio Rice">
+                        </div>
+                        <div class="details">
+                            <h3>Arborio Rice</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Arborio rice is a short-grain rice known for its high starch content, commonly used in
+                                risotto dishes due to its creamy texture.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/rices-sushi.jpeg" alt="Sushi Rice">
+                        </div>
+                        <div class="details">
+                            <h3>Sushi Rice</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Sushi rice, also known as Japanese short-grain rice, is a type of rice commonly used in
+                                sushi dishes due to its sticky texture when cooked.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- flour //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <div class="product-menu flour">
+                <div class="list">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/flour-all-purpose.jpeg" alt="All-Purpose Flour">
+                        </div>
+                        <div class="details">
+                            <h3>All-Purpose Flour</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                All-purpose flour is a versatile flour used in baking and cooking for various recipes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/flour-wheat.jpg" alt="Whole Wheat Flour">
+                        </div>
+                        <div class="details">
+                            <h3>Whole Wheat Flour</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Whole wheat flour is made from grinding whole wheat grains, retaining all parts of the
+                                kernel, making it higher in fiber and nutrients compared to refined flour.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/flour-almond.jpeg" alt="Almond Flour">
+                        </div>
+                        <div class="details">
+                            <h3>Almond Flour</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Almond flour is made from ground almonds and is a popular gluten-free flour alternative
+                                used
+                                in baking.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/flour-Chickpea.jpeg" alt="Chickpea Flour">
+                        </div>
+                        <div class="details">
+                            <h3>Chickpea Flour</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Chickpea flour, also known as gram flour or besan, is a gluten-free flour made from
+                                ground
+                                chickpeas, commonly used in Indian, Pakistani, and Bangladeshi cuisines.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/product-list/flour-rice.jpg" alt="Rice Flour">
+                        </div>
+                        <div class="details">
+                            <h3>Rice Flour</h3>
+                            <p>Packet Size: Various
+                                Origin: Various
+                                Rice flour is a gluten-free flour made from finely ground rice, commonly used in Asian
+                                cuisines and gluten-free baking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- dairy ///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <div class="product-menu dairy">
+                <div class="list">
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/dairy-ifcmp.jpeg" alt="Instant full cream milk powder">
+                    </div>
+                    <div class="details">
+                        <h3>Instant full cream milk powder</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Instant full cream milk powder is a convenient option for those who want to enjoy milk
+                            without the need for refrigeration.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/dairy-pmilk.jpeg" alt="Powdered Milk">
+                    </div>
+                    <div class="details">
+                        <h3>Powdered Milk</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Powdered milk, also known as dried milk, is a manufactured dairy product made by evaporating
+                            milk to dryness.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/dairy-wp.jpeg" alt="Powdered Whey Protein">
+                    </div>
+                    <div class="details">
+                        <h3>Powdered Whey Protein</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Powdered whey protein is a dietary supplement used by athletes, bodybuilders, and fitness
+                            enthusiasts to support muscle growth and recovery.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/dairy-btr-milk.jpeg" alt="Powdered Buttermilk">
+                    </div>
+                    <div class="details">
+                        <h3>Powdered Buttermilk</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Powdered buttermilk is a convenient alternative to liquid buttermilk, commonly used in
+                            baking and cooking for its tangy flavor and tenderizing properties.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/dairy-pcream.jpeg" alt="Powdered Creamer">
+                    </div>
+                    <div class="details">
+                        <h3>Powdered Creamer</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Powdered creamer is a non-dairy creamer made from hydrogenated vegetable oil and other
+                            ingredients, commonly used as a whitening and flavoring agent in coffee and tea.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+<!-- / nuts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <div class="product-menu nutdryfruits">
+                <div class="list">
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/nut-Almonds.jpeg" alt="Almonds">
+                    </div>
+                    <div class="details">
+                        <h3>Almonds</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Almonds are nutrient-rich nuts that are popular for their health benefits and versatility in
+                            cooking.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/nut-Walnuts.jpeg" alt="Walnuts">
+                    </div>
+                    <div class="details">
+                        <h3>Walnuts</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Walnuts are nutrient-dense nuts known for their distinct flavor and crunchy texture,
+                            commonly used in baking and cooking.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/nut-Cashew.jpeg" alt="Cashews">
+                    </div>
+                    <div class="details">
+                        <h3>Cashews</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Cashews are kidney-shaped nuts commonly used in cooking and snacking, known for their creamy
+                            texture and mild flavor.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/nut-pistachios.jpeg" alt="Pistachios">
+                    </div>
+                    <div class="details">
+                        <h3>Pistachios</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Pistachios are small, green nuts with a slightly sweet and savory flavor, commonly used in
+                            both sweet and savory dishes.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/nut-Raisins.jpeg" alt="Raisins">
+                    </div>
+                    <div class="details">
+                        <h3>Raisins</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Raisins are dried grapes with a sweet and tangy flavor, commonly used in baking, cooking,
+                            and as a snack.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/product-list/nut-Dry Apricots.jpeg" alt="Dried Apricots">
+                    </div>
+                    <div class="details">
+                        <h3>Dried Apricots</h3>
+                        <p>Packet Size: Various
+                            Origin: Various
+                            Dried apricots are sun-dried fruits with a sweet and tangy flavor, commonly used in baking,
+                            cooking, and as a snack.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <div class="container-s">
+            <div class="left">
+                <div class="our">
+                    <div class="logg">
+                        <img src="./assets/images/logo/althai-banner-curve-white-sq.png" alt="" srcset="">
+                    </div>
+                    <h2>Do You Need Help With
+                        Anything?</h2>
+                    <p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month for
+                        free.
+                        You can unsubscribe anytime.</p>
+                    <div class="subscribe">
+                        <div class="content">
+                            <form class="subscription">
+                                <input class="add-email" type="email" placeholder="subscribe@me.now">
+                                <button class="submit-email" type="button" onclick="error_call_submitation_failed()">
+                                    <span class="before-submit">Subscribe</span>
+                                    <span class="after-submit">Thank you for subscribing!</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-details link">
+                <div class="location">
+                    <p><a href=""><i class="fa-solid fa-location-dot"></i><span>Al Jurf - industrial Area - 2 -
+                                Ajman - United Arab Emirates</span></a></p>
+                    <p><a href=""><i class="fa-solid fa-phone"></i><span> +971 65673141</span></a></p>
+                    <p><a href="mailto:althai.uae@gmail.com"><i
+                                class="fa-solid fa-handshake"></i><span>althai.uae@gmail.com</span></a></p>
+                </div>
+            </div>
+
+            <div class="comapny link">
+                <h2>Company</h2>
+                <div class="links">
+                    <ul>
+                        <li><a href="/">Welcome</a></li>
+                        <li><a href="/our-story">Our Story</a></li>
+                        <li><a href="/Menu">products</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="explore link">
+                <h2>Explore</h2>
+                <div class="links">
+                    <ul>
+                        <li><a href="#MEET">Meet Our Team</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="/our-story">About</a></li>
+                        <li><a href="#MENU">Menu</a></li>
+                        <li><a href="/map">Map</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="copyright">
+            <div class="container">
+                <p>
+                    Copyright © 2024-2025 <a href="https://althaifoods.com" style="color: #f0f0f0;"> Al Thai Foodstuff
+                        Trading&nbsp;LLC</a>
+                    | Designed by <a rel="sponsored" href="https://braitenx.com" target="_blank" style="color: #f0f0f0;">Braitnex</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script>
+
+        function filterProducts(category) {
+            var product_lister_c = document.querySelectorAll('.product-menu');
+
+            product_lister_c.forEach(function (product) {
+                product.style.display = 'none';
+            });
+
+            var selectedProducts = document.querySelectorAll('.' + category.toLowerCase());
+
+            selectedProducts.forEach(function (product) {
+                product.style.display = 'block';
+            });
+
+
+            window.location.hash = category;
+
+
+            document.querySelectorAll('.products-cat button').forEach(function (btn) {
+                btn.classList.remove('active');
+            });
+
+
+            document.getElementById('btn' + category).classList.add('active');
+        }
+
+        function highlightActiveButton() {
+            var hash = window.location.hash.substr(1);
+            if (hash) {
+                var activeButton = document.getElementById('btn' + hash.charAt(0).toUpperCase() + hash.slice(1));
+                if (activeButton) {
+
+                    filterProducts(hash.charAt(0).toUpperCase() + hash.slice(1));
+
+
+                    document.querySelectorAll('.products-cat button').forEach(function (btn) {
+                        btn.classList.remove('active');
+                    });
+
+
+                    activeButton.classList.add('active');
+                }
+            }
+        }
+
+
+        window.addEventListener('DOMContentLoaded', highlightActiveButton);
+
+        window.addEventListener('hashchange', highlightActiveButton);
+
+
+
+
+    </script>
+</body>
+
+</html>
