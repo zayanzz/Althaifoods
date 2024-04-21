@@ -1,40 +1,4 @@
-.rout-page {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 20vh;
-    overflow: hidden;
-    padding-left: 30px;
-    color: #ff4f4f;
-    line-height: 40px;
-}
 
-.rout-page h2 {
-    font-size: 20px;
-}
-
-.rout-page p,
-.rout-page p a {
-    color: #828282;
-}
-
-.rout-page p i {
-    color: #090f00;
-}
-
-.rout-page .bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-image: url("../images/others/Al-THAI-AD-3.jpg.jpeg"); */
-    background: #f0f0f0;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    z-index: -10;
-}
 
 .products-cat {
     display: flex;
