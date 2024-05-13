@@ -20,7 +20,8 @@
     <meta name="copyright" content="© 2024 Al Thai Foodstuff Trading LLC. All rights reserved.">
 
     <meta name="copyright" content="www.althaifoods.com">
-    <meta name="keyphrase" content="foodstuff trading, dry products, spices, pulses, rice, dry fruits, flour, dairy products, wholesale supplier, UAE, Al Jurf Industrial Area, Ajman">
+    <meta name="keyphrase"
+        content="foodstuff trading, dry products, spices, pulses, rice, dry fruits, flour, dairy products, wholesale supplier, UAE, Al Jurf Industrial Area, Ajman">
 
     <meta name="topic" content="Top No. 1 Foodstuff Trading LLC Team">
     <meta name="subject" content=" Top No.1 Foodstuff Trading company">
@@ -34,8 +35,9 @@
 
     <meta itemprop="name" content="Al Thai Foodstuff Trading LLC">
 
-    
-    <meta property="og:description" content="Al Thai Foodstuff Trading LLC is a leading provider of high-quality foodstuff products in the UAE. We offer a wide range of dry products, spices, pulses, rice, dry fruits, flour, and dairy products. Explore our premium offerings today!">
+
+    <meta property="og:description"
+        content="Al Thai Foodstuff Trading LLC is a leading provider of high-quality foodstuff products in the UAE. We offer a wide range of dry products, spices, pulses, rice, dry fruits, flour, and dairy products. Explore our premium offerings today!">
 
     <meta property="og:image" content="https://althaifoods.com/assets/images/banner/banner-althai.png">
 
@@ -52,6 +54,8 @@
 
     <!-- icons  -->
     <script src="https://kit.fontawesome.com/3f83c54f58.js" crossorigin="anonymous"></script>
+    <!-- effect on scroll  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -169,15 +173,16 @@
 
         <div class="social-fsx-icons animate">
             <a href="https://www.instagram.com/althai.uae/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/althaiuae" target="_blank"><i class="fa-brands fa-facebook-f" ></i></a>
-            <a href="https://www.linkedin.com/in/al-thai-food-stuff-trading-l-l-c-47856021a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/althaiuae" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/al-thai-food-stuff-trading-l-l-c-47856021a/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </div>
 
 
     <div class="sales-team">
         <div class="bg-img"></div>
-        <div class="card">
+        <div class="card " id="sales_conatct">
             <h2>Meet Our Team</h2>
             <div class="details">
                 <div class="person">
@@ -193,14 +198,15 @@
                 <a href="/contact">Contact</a>
             </div>
         </div>
+        <div class="trigger"></div>
     </div>
 
     <!-- / menu  -->
 
     <section class="menu">
-        <h2>Specialties <span>Our Menu</span></h2>
+        <h2 data-aos="new-animation" >Specialties <span>Our Menu</span></h2>
         <div class="products">
-            <div class="card">
+            <div class="card" data-aos="fade-right">
                 <div class="image">
                     <img src="./assets/images/others/spices.jpeg" alt="Spices">
                 </div>
@@ -210,7 +216,7 @@
                     <button onclick="window.location.href='menu#Spices'">view</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card " data-aos="fade-down">
                 <div class="image">
                     <img src="./assets/images/others/pulses.jpeg" alt="Pulses">
                 </div>
@@ -220,7 +226,7 @@
                     <button onclick="window.location.href='menu#Pulses'">view</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left">
                 <div class="image">
                     <img src="./assets/images/others/rice.jpeg" alt="Rices">
                 </div>
@@ -230,7 +236,7 @@
                     <button onclick="window.location.href='menu#Rices'">view</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-right">
                 <div class="image">
                     <img src="./assets/images/others/flour.jpeg" alt="Flour">
                 </div>
@@ -240,7 +246,7 @@
                     <button onclick="window.location.href='menu#Flour'">view</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <div class="image">
                     <img src="./assets/images/others/diary.jpeg" alt="Dairy">
                 </div>
@@ -248,10 +254,10 @@
                     <h3>Dairy</h3>
                     <p>Instant full cream milk powder, Powdered Milk, Powdered Whey Protein, Powdered Buttermilk,
                         Powdered Creamer</p>
-                        <button onclick="window.location.href='menu#Dairy'">view</button>
+                    <button onclick="window.location.href='menu#Dairy'">view</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left">
                 <div class="image">
                     <img src="./assets/images/others/nut-dry-frts.jpeg" alt="Nut & Dry Fruits">
                 </div>
@@ -264,18 +270,20 @@
         </div>
     </section>
 
-<!-- / contact ///////////////////----------------------------------------------------- -->
-<section class="contact-short">
-    <div class="container">
-        <div class="contact-info">
-            <h3>Need Assistance?</h3>
-            <p>Feel free to reach out to us with any questions or inquiries. Our team is here to help!</p>
+    <!-- / contact ///////////////////----------------------------------------------------- -->
+    <section class="contact-short">
+        <div class="container" >
+            <div class="contact-info">
+                <h3 data-aos="new-animation">Need Assistance?</h3>
+                <p data-aos="fade-left" data-aos-id="super-duper">Feel free to reach out to us with any questions or inquiries. Our team is here to help!</p>
+            </div>
+            <div class="contact-action">
+                <a class="btn btn-contact" href="/contact" data-aos="fade-up " data-aos-mirror="true"
+                data-aos-once="false"
+                >Contact Us</a>
+            </div>
         </div>
-        <div class="contact-action">
-            <a class="btn btn-contact" href="/contact">Contact Us</a>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -284,66 +292,72 @@
     <!-- /blog /////////////////--------------------------------------------------------------------------------- -->
 
     <section class="blog">
-        <h2>Our Blog/<span>Gallery</span></h2>
+        <h2 data-aos-mirror="true" data-aos="fade-in" data-aos-easing="ease-in-out">Our Blog/<span>Gallery</span></h2>
         <div class="container">
-            <div class="card">
+            <div class="card" data-aos="fade-in">
                 <div class="image">
                     <img src="./assets/images/ad/AD_1.jpg" alt="Diary">
                 </div>
                 <div class="details">
                     <h3 class="date">3 Feb 2024</h3>
-                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4AcEIGSGns/'">View More</button></p>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4AcEIGSGns/'">View
+                            More</button></p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-in">
                 <div class="image">
                     <img src="./assets/images/ad/AD_2.jpg" alt="Diary">
                 </div>
-                <div class="details">
+                <div class="details" data-aos="fade-in">
                     <h3 class="date"> 8 Feb 2024</h3>
-                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4AcEIGSGns/'">View More</button></p>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4AcEIGSGns/'">View
+                            More</button></p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-in">
                 <div class="image">
                     <img src="./assets/images/ad/AD_3.jpg" alt="Diary">
                 </div>
                 <div class="details">
                     <h3 class="date">20 Feb 2024</h3>
-                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4FpPugST2G/'">View More</button></p>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4FpPugST2G/'">View
+                            More</button></p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-in">
                 <div class="image">
                     <img src="./assets/images/ad/AD_4.jpg" alt="Diary">
                 </div>
-                <div class="details">
+                <div class="details" data-aos="fade-in">
                     <h3 class="date">1 March 2024</h3>
-                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4hoR_KSU8B/'">View More</button></p>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4hoR_KSU8B/'">View
+                            More</button></p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-in">
                 <div class="image">
                     <img src="./assets/images/ad/AD_5.jpg" alt="Diary">
                 </div>
                 <div class="details">
                     <h3 class="date">8 March 2024</h3>
-                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4zgtO7pTyN/'">View More</button></p>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C4zgtO7pTyN/'">View
+                            More</button></p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-in">
                 <div class="image">
                     <img src="./assets/images/ad/AD_6.jpg" alt="Diary">
                 </div>
                 <div class="details">
                     <h3 class="date">18 March 2024</h3>
-                    <p><button onclick="window.location.href='https://www.instagram.com/p/C47uQZNppP7/'">View More</button></p>
+                    <p><button onclick="window.location.href='https://www.instagram.com/p/C47uQZNppP7/'">View
+                            More</button></p>
                 </div>
             </div>
             <!-- Repeat similar structure for more cards -->
         </div>
     </section>
-    
+
 
 
 
@@ -353,7 +367,7 @@
             <div class="left">
                 <div class="our">
                     <div class="logg">
-                        <img src="./assets/images/logo/althai-banner-curve-white-sq.png" alt="" srcset="">
+                        <img src="./assets/images/logo/althai-banner-curve-white-sq.png" alt="" srcset="" data-aos-easing="ease-in-out">
                     </div>
                     <h2>Do You Need Help With
                         Anything?</h2>
@@ -420,7 +434,9 @@
                 <p>
                     Copyright © 2024-2025 <a href="https://althaifoods.com" style="color: #f0f0f0;"> Al Thai Foodstuff
                         Trading&nbsp;LLC</a>
-                    | Designed by <a rel="sponsored" href="https://braitenx.com" target="_blank" style="color: #f0f0f0;">Braitnex</a>
+                    | Designed by <a rel="sponsored" href="https://braitenx.com" target="_blank"
+                        style="color: #f0f0f0;">
+                        Braitnex</a>
                 </p>
             </div>
         </div>
@@ -430,6 +446,11 @@
     <!-- scripts  -->
 
     <script src="./assets/js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

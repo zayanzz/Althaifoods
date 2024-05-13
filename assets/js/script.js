@@ -105,8 +105,7 @@ document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
 
 // alert 
 function error_call_submitation_failed() {
-  alert('404 Error currently not available contact form please contact +97121892932')
+  alert('404 Error currently not available contact form please contact +97112345643')
 }
-
 
 
